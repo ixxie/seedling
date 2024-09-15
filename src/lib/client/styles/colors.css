@@ -1,0 +1,43 @@
+:root {
+    --base-chroma: 20%;
+
+    --primary-hue: 120;
+    --primary-chroma: var(--base-chroma);
+    --primary: var(--primary-chroma) var(--primary-hue);
+}
+
+/* Light theme */
+html,
+html[data-theme="light"] {
+  color-scheme: light;
+  --background-color: lch(95% var(--primary));
+  --card-color: lch(99% var(--primary));
+  --border-color: lch(90% var(--primary));
+  --input-color: lch(90% var(--primary));
+  --text-color: lch(10% var(--primary));
+  --accent-color: lch(60% var(--primary));
+}
+
+/* Dark theme override */
+html[data-theme="dark"] {
+  color-scheme: dark;
+  --background-color: lch(5% var(--primary));
+  --card-color: lch(1% var(--primary));
+  --input-color: lch(10% var(--primary));
+  --border-color: lch(10% var(--primary));
+  --text-color: lch(90% var(--primary));
+  --accent-color: lch(40% var(--primary));
+}
+
+/* System preference override */
+@media (prefers-color-scheme: dark) {
+  html:not([data-theme]) {
+    color-scheme: dark;
+    --background-color: lch(5% var(--primary));
+    --card-color: lch(1% var(--primary));
+    --input-color: lch(10% var(--primary));
+    --border-color: lch(10% var(--primary));
+    --text-color: lch(90% var(--primary));
+    --accent-color: lch(40% var(--primary));
+  }
+}

@@ -1,0 +1,24 @@
+* {
+	font-family: var(--sans);
+	color: var(--text-color);
+}
+
+article {
+	padding: 2rem;
+}
+
+p {
+	margin: 1rem 0;
+}
+
+a, .a {
+	color: var(--accent-color);
+	background: none;
+	border: none;
+	text-decoration: underline;
+}
+
+strong > a,
+strong > .a {
+	text-decoration: none;
+}

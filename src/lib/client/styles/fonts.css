@@ -1,0 +1,44 @@
+
+/* FONT FACES */
+
+/* sans-serif */
+@font-face {
+	font-family: 'Noto Sans';
+	src: local('Noto Sans'), url('/fonts/NotoSans-VariableFont_wdth,wght.ttf');
+	font-weight: 100 900;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Noto Sans';
+	src: local('Noto Sans'), url('/fonts/NotoSans-Italic-VariableFont_wdth,wght.ttf');
+	font-weight: 100 900;
+	font-style: italic;
+}
+/* serif */
+@font-face {
+	font-family: 'Noto Serif';
+	src: local('Noto Serif'), url('/fonts/NotoSerif-VariableFont_wdth,wght.ttf');
+	font-weight: 100 900;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Noto Serif';
+	src: local('Noto Serif'), url('/fonts/NotoSerif-Italic-VariableFont_wdth,wght.ttf');
+	font-weight: 100 900;
+	font-style: italic;
+}
+/* monospace */
+@font-face {
+	font-family: 'Noto Sans Mono';
+	src: local('Noto Sans Mono'), url('/fonts/NotoSansMono-VariableFont_wght.ttf');
+	font-weight: 100 900;
+	font-style: normal;
+}
+
+/* VARIABLES */
+
+:root {
+    --sans: 'Noto Sans', ui-sans-serif, sans-serif;
+    --serif: 'Noto Serif', ui-serif, serif;
+    --mono: 'Noto Mono', ui-monospace, monospace;
+}

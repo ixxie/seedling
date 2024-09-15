@@ -1,0 +1,27 @@
+form {
+	max-width: 600px;
+	margin: 0 auto;
+}
+
+fieldset, label {
+	display: flex;
+	flex-flow: column nowrap;
+	gap: 0.5rem;
+	padding: 1rem;
+}
+
+button, .button {
+	background-color: var(--accent-color);
+	padding: 0.3rem 0.4rem;
+	color: white;
+	text-decoration: none;
+	border: none;
+	border-radius: var(--leaf-corners);
+}
+
+input {
+	padding: 0.2rem 0.4rem;
+	border: 1px solid var(--accent-color);
+	border-radius: var(--leaf-corners);
+	background-color: var(--input-color);
+}

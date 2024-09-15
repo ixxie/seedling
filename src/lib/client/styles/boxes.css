@@ -1,0 +1,13 @@
+:root {
+    --border-radius: 0.5rem;
+    --sharp-corners: 0;
+    --round-corners: var(--border-radius);
+    --leaf-corners: var(--border-radius) 0 var(--border-radius) 0;
+    --corners: var(--leaf-corners)
+}
+
+.card {
+    background-color: var(--card-color);
+    border-radius: var(--corners);
+    border: 1px solid var(--border-color);
+}
